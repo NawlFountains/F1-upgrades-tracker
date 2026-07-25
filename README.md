@@ -69,17 +69,17 @@ python run_weekend.py
 ```
 ---
 
-## ⚠️ Limitations & Disclaimers
+## Limitations & Disclaimers
 
 > **Note:** This project relies on automated PDF extraction (`pdfplumber`) and LLM processing (`Groq`). While the pipeline works cleanly for most official documents, please keep the following in mind:
 
-* **PDF Layout Variations**: The FIA occasionally alters document formatting, font sizes, or column alignments between Grand Prix weekends. This can sometimes cause multi-line table entries to split prematurely or truncate.
+* **PDF Layout Variations**: The FIA occasionally alters document formatting, font sizes, or column alignments between Grand Prix weekends. This can sometimes cause multi-line table entries to split prematurely, truncate or attribute upgrades to another team.
 * **LLM Interpretations**: Summaries in `.json` format are AI-generated based on extracted text. Minor phrasing nuances or complex technical aero updates may occasionally be simplified or misrepresented.
 * **Data Verification**: Always cross-reference critical upgrade data with official [FIA Documents](https://www.fia.com/documents) before referencing in articles or reports.
 
 ---
 
-### 🤝 Contributing Edge Cases
+### Contributing Edge Cases
 If you spot a race weekend where table parsing cuts short, drops team rows or attributes upgrades to another team (sometimes it happens the parsing isn't perfect):
 1. Open an **Issue** with the tag `bug:parsing`.
 2. Include the **Race Weekend / Year** and the specific team/component affected.
