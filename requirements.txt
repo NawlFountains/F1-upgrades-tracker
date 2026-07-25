@@ -1,0 +1,6 @@
+pdfplumber
+pandas
+requests
+python-dotenv
+groq
+fastf1
