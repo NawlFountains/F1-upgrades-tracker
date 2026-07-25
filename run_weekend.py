@@ -102,7 +102,7 @@ def process_race_weekend(year: int, gp_name: str):
 
     summaries = generate_summaries(df)                    # summarizer.py
     with open(f"data/{race_slug}/team_summaries.json", "w") as f:
-        json.dump(summaries, f)
+        json.dump(summaries, f, indent=2)
 
     return race_slug
 
